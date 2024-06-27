@@ -8,17 +8,17 @@ function processar(nombre, callback) {
 // ex 2 
 // Callbacks amb operacions matemàtiques: Escriu una funció calculadora que accepti tres paràmetres: dos nombres i una funció de callback. La funció calculadora ha d'invocar la funció de callback amb els dos nombres com a paràmetres. Després, crida calculadora amb una funció que faci la suma dels dos nombres.
 
-// function calculadora(a, b, callback) {
-//     const res = callback(a + b)
-//     return res
-// }
 
-// function callback(a, b) {
-//     const suma = a + b
-//     return suma
-// }
+function calculadora(a, b, callback) {
+    return callback(a, b)
+}
 
-// console.log(calculadora(4, 10, callback))
+function suma(a, b) {
+    const suma = a + b
+    return suma
+}
+
+console.log(calculadora(4, 10, suma))
 
 // ex 3
 // Ús de callbacks en funcions asíncrones: Escriu una funció esperarISaludar que accepti dos paràmetres: un nom i una funció de callback. La funció ha d'esperar 2 segons i llavors invocar la funció de callback, passant el nom com a paràmetre.
