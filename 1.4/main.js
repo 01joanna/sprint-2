@@ -35,7 +35,10 @@ un: "añadido"}
 // ex 4 
 // Rest en Destructuring: Crea una array amb diversos elements. Utilitza destructuring i l'operador rest per a assignar els primers dos elements a variables, i després assignar la resta dels elements a una tercera variable.
 
+const diversidad = [1, "diversos", 2, "elementos", 3, "en", 4, "un", 5, "array"]
+const [uno, dos, ...rest] = diversidad
 
+console.log(uno, dos, rest)
 
 // ex 5
 // Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta array.
@@ -45,7 +48,7 @@ function spread(a, b, c) {
 }
 
 const lenguajes = ["español", "ingles", "frances", "catalán", "chino"]
-console.log(spread(...lenguajes))
+// console.log(spread(...lenguajes))
 
 // ex 6
 // Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza l'operador spread per a fusionar aquests dos objectes en un de nou.
