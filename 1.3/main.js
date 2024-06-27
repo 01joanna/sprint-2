@@ -33,8 +33,17 @@ function esperarISaludar(nombre, callback) {
 // Callbacks amb arrays: Escriu una funció processarElements que accepti dos paràmetres: un array i una funció de callback.La funció processarElements ha d'invocar la funció de callback per cada element de l'array.
 
 function processarElements(arr, callback) {
-    
+    arr.forEach(element => {
+        callback(element)
+    });
 }
+
+processarElements([1, 2, 3, 4, 5], console.log)
 
 // ex 5 
 // Escriu una funció processarCadena que accepti dos paràmetres: una cadena de caràcters i una funció de callback. La funció processarCadena ha de convertir la cadena a majúscules i llavors invocar la funció de callback amb la cadena transformada.
+
+function processarCadena(cadena, callback) {
+    const mayus = cadena.toUpperCase()
+    callback(mayus)
+}
