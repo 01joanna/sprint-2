@@ -41,7 +41,7 @@ un: "añadido"}
 // Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta array.
 
 function spread(a, b, c) {
-    return a + ", " + b + ", " + c
+    return a + " , " + b + " , " + c
 }
 
 const lenguajes = ["español", "ingles", "frances", "catalán", "chino"]
